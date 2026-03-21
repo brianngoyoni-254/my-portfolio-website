@@ -207,3 +207,22 @@ html {
         margin-top: 20px;
     }
 }
+@media (max-width: 600px) {
+
+  .header {
+    flex-direction: column;   
+    align-items: center;
+    gap: 15px;                
+    padding: 15px;
+  }
+
+  .logo {
+    margin-bottom: 10px;      
+  }
+
+  .navbar ul {
+    flex-direction: column;   
+    gap: 10px;                
+  }
+
+}
