@@ -55,7 +55,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 60px 10%;
-    gap: 40px;
+    gap: 20px;
+    flex-direction: row;
 }
 
 /* LEFT SIDE */
@@ -170,6 +171,7 @@ body {
     border-radius: 20px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.6);
     transition: 0.4s ease;
+    
 }
 
 .image img:hover {
@@ -204,7 +206,7 @@ html {
 
     .image img {
         width: 220px;
-        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 @media (max-width: 600px) {
