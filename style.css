@@ -13,6 +13,7 @@ color: white;
 display: flex;
 flex-direction: column;
 min-height: 100vh;
+overflow-x: hidden;
 }
 
 /* INTRO SCREEN */
@@ -27,17 +28,24 @@ display: flex;
 justify-content: center;
 align-items: center;
 z-index: 9999;
-transition: opacity 0.8s ease, visibility 0.8s ease;
+padding: 20px;
+text-align: center;
 }
 
 #intro-text {
-font-size: 2.5rem;
+font-size: clamp(1.2rem, 4.5vw, 2.5rem);
 font-weight: bold;
-letter-spacing: 2px;
-white-space: nowrap;
+letter-spacing: 1px;
+
+white-space: normal;       /* allows wrapping */
+word-wrap: break-word;
+overflow-wrap: break-word;
+text-align: center;
+
 border-right: 3px solid white;
-overflow: hidden;
 padding-right: 5px;
+max-width: 95%;
+line-height: 1.4;
 }
 
 /* HEADER */
@@ -55,7 +63,6 @@ font-size: 24px;
 letter-spacing: 2px;
 }
 
-/* NAVBAR */
 .navbar ul {
 display: flex;
 list-style: none;
@@ -82,7 +89,7 @@ padding: 60px 10%;
 gap: 40px;
 }
 
-/* LEFT TEXT */
+/* LEFT SIDE */
 .intro {
 flex: 1;
 }
@@ -97,7 +104,7 @@ margin-bottom: 20px;
 font-size: 32px;
 }
 
-/* TYPEWRITER MAIN TEXT */
+/* TYPEWRITER (ROLE TEXT) */
 #typewriter {
 font-size: 22px;
 margin: 15px 0;
@@ -113,7 +120,7 @@ animation: blink 0.7s infinite;
 50% { border-color: transparent; }
 }
 
-/* ABOUT TEXT */
+/* PARAGRAPH */
 .intro p {
 margin-top: 20px;
 line-height: 1.6;
@@ -134,9 +141,9 @@ margin-top: 25px;
 display: flex;
 align-items: center;
 gap: 20px;
+flex-wrap: wrap;
 }
 
-/* BUTTON */
 .btn {
 padding: 12px 25px;
 border: none;
@@ -145,13 +152,11 @@ background: linear-gradient(45deg, #00d4ff, #007cf0);
 color: white;
 font-size: 15px;
 cursor: pointer;
-box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 transition: 0.3s;
 }
 
 .btn:hover {
 transform: translateY(-3px);
-box-shadow: 0 12px 25px rgba(0,0,0,0.6);
 }
 
 /* SOCIALS */
@@ -174,7 +179,7 @@ transition: 0.3s;
 transform: scale(1.1);
 }
 
-/*IMAGE */
+/* IMAGE */
 .image {
 flex: 1;
 display: flex;
@@ -199,11 +204,7 @@ opacity: 1;
 transform: scale(1);
 }
 
-.image img:hover {
-transform: scale(1.05);
-}
-
-/*FOOTER */
+/* FOOTER  */
 .footer {
 text-align: center;
 padding: 20px;
@@ -213,21 +214,17 @@ color: #ccc;
 margin-top: auto;
 }
 
-/*SMOOTH SCROLL  */
-html {
-scroll-behavior: smooth;
-}
-
-/* RESPONSIVE DESIGN */
+/*TABLET RESPONSIVE */
 @media (max-width: 900px) {
 .hero {
 flex-direction: column;
 text-align: center;
 }
 
-.actions {
-justify-content: center;
-flex-wrap: wrap;
+#typewriter {
+font-size: 18px;
+white-space: normal;
+height: auto;
 }
 
 .image img {
@@ -237,6 +234,7 @@ margin-bottom: 20px;
 }
 }
 
+/*  SMALL PHONES */
 @media (max-width: 600px) {
 
 .header {
@@ -248,5 +246,45 @@ padding: 15px;
 .navbar ul {
 flex-direction: column;
 gap: 10px;
+}
+
+.intro h2 {
+font-size: 24px;
+}
+
+#typewriter {
+font-size: 16px;
+white-space: normal;
+line-height: 1.4;
+}
+
+#intro-text {
+font-size: 1.3rem;
+padding: 10px;
+}
+
+.actions {
+justify-content: center;
+}
+
+.image img {
+width: 160px;
+height: 160px;
+}
+}
+
+/* VERY SMALL PHONES */
+@media (max-width: 400px) {
+
+#intro-text {
+font-size: 1.1rem;
+}
+
+#typewriter {
+font-size: 14px;
+}
+
+.intro h2 {
+font-size: 20px;
 }
 }
