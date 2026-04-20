@@ -1,124 +1,159 @@
-# Brian Edward Ngoyoni Portfolio
+# Brian Edward Ngoyoni — Portfolio Website
 
-Welcome to my personal portfolio website!  
-This project showcases my skills, projects, and experience as a junior software developer.
+##  Overview
 
----
+This is a personal portfolio website designed and developed by **Brian Edward Ngoyoni** to showcase skills, projects, and professional background as a **Software Engineering student and aspiring full-stack developer**.
 
-## About Me
-
-I am currently a **Software Engineering student at Moringa School**, pursuing **Full Stack Software Development**.  
-I am passionate about building responsive, user-friendly, and modern web applications.
-
-My goal is to become a **professional full stack developer**, working with both frontend and backend technologies.
-
-In addition, I have experience as a **WordPress website developer**, where I have built and managed real-world websites.
+The website highlights my work in web development, including both **custom-coded applications** and **WordPress projects**, while also providing an easy way to connect with me.
 
 ---
 
-## 🛠️ Tech Stack
+##  Features
+
+* Modern and responsive UI design
+*  Intro animation with smooth transitions
+*  Dynamic typewriter text effect
+*  Fully responsive across devices
+*  Clean layout and structured content
+*  Integrated social and contact links
+*  Dedicated sections for projects and experience
+
+---
+
+##  Pages Structure
+
+###  Home (`index.html`)
+
+* Intro animation screen
+* Hero section with profile image
+* Typewriter effect introducing roles
+* Brief personal description
+* Social media links (GitHub & LinkedIn)
+
+---
+
+###  About (`about.html`)
+
+* Personal introduction
+* Educational background (Moringa School)
+* Technical skills (Frontend, Backend, Tools)
+* Experience overview
+* Career goals and aspirations
+
+---
+
+###  Projects (`projects.html`)
+
+* Collection of development projects including:
+
+  * Dictionary App
+  * MATCH-IQ Quiz App
+  * JavaScript Calculator
+  * Signup Form
+  * Movie Catalogue
+  * Analog Clock
+  * Airbnb-style Website
+* WordPress projects section:
+
+  * Ray Newsroom
+  * Untold
+
+Each project includes:
+
+* Description
+* Live demo link
+* GitHub repository (where applicable)
+
+---
+
+### 📞 Contact (`contact.html`)
+
+* Multiple contact options:
+
+  * LinkedIn
+  * GitHub
+  * Email
+  * Phone
+  * WhatsApp
+  * SMS
+
+---
+
+##  Technologies Used
 
 ### Frontend
-- HTML5
-- CSS3
-- JavaScript (Currently Learning)
-- React (Upcoming)
 
-### Backend
-- Python (Upcoming)
-- Flask & SQLAlchemy (Upcoming)
+* HTML5
+* CSS3 (Flexbox, Grid, Animations)
+* JavaScript (Vanilla JS)
 
-### Database
-- SQL (Upcoming)
+### Other Tools
 
-### Tools
-- Git
-- GitHub
+* Git & GitHub
+* WordPress
 
 ---
 
-## Pages Included
+##  Key Functionalities
 
-- **Home Page** → Introduction and overview  
-- **About Page** → My background, skills, and experience  
-- **Projects Page** → Showcases my development work  
-- **Contact Page** → Ways to reach me  
-
----
-
-## 💻 Projects Featured
-
-### 1. Signup Form
-A modern and responsive signup form built using HTML and CSS.
-
-🔗 Live Demo: https://endearing-cranachan-66b399.netlify.app/  
-🔗 GitHub: https://github.com/brianngoyoni-254/Signup-Form.git  
+* **Typewriter Animation:** Displays rotating professional titles dynamically
+* **Intro Screen:** Enhances user experience with a smooth welcome animation
+* **Interactive UI:** Hover effects and transitions across elements
+* **Responsive Design:** Optimized for mobile, tablet, and desktop
 
 ---
 
-### 2. Ticking Clock
-An analog clock built using HTML, CSS, and JavaScript.
+## Installation & Usage
 
-🔗 Live Demo: https://cozy-fairy-2f446a.netlify.app/  
-🔗 GitHub: https://github.com/brianngoyoni-254/Ticking-Clock.git  
+1. Clone the repository:
 
----
+   ```bash
+   git clone https://github.com/brianngoyoni-254/my-portfolio.git
+   ```
 
-### 3. Smartlife Airbnb Website
-A responsive Airbnb-style website built using HTML, CSS, and JavaScript.
+2. Navigate into the project folder:
 
-🔗 Live Demo: https://bucolic-cactus-08d6f2.netlify.app/  
-🔗 GitHub: https://github.com/brianngoyoni-254/airbnb-website.git  
+   ```bash
+   cd your-repo-name
+   ```
 
----
-
-## WordPress Projects
-
-- Raynewsroom → https://raynewsroom.co.ke/  
-- Untold → https://untold.co.ke/  
-
----
-
-##  Contact Me
-
-- GitHub: https://github.com/brianngoyoni-254  
-- LinkedIn: https://www.linkedin.com/in/ray-brian-571b2319b  
-- Email: brianngoyoni254@gmail.com  
-
----
-
-## Features of This Portfolio
-
-- Responsive design (mobile-friendly)
-- Modern UI with gradients and animations
-- Well-structured layout
-- Clean and readable code
+3. Open `index.html` in your browser.
 
 ---
 
 ## Future Improvements
 
-- Add backend functionality
-- Add contact form with message handling
-- Improve animations and interactivity
-- Deploy full stack applications
+* Add backend functionality (contact form handling)
+* Improve accessibility (ARIA roles, semantic HTML)
+* Add project filtering and search
+* Integrate animations library (e.g., GSAP or Framer Motion)
+* Deploy with a custom domain
+
+---
+
+##  Opportunities
+
+I am open to:
+
+* Internships
+* Freelance work
+* Collaborations
+* Entry-level developer roles
+
+---
+
+## Contact Me
+
+*  Email: [brianngoyoni254@gmail.com](mailto:brianngoyoni254@gmail.com)
+*  LinkedIn: [https://www.linkedin.com/in/ray-brian-571b2319b](https://www.linkedin.com/in/ray-brian-571b2319b)
+* GitHub: [https://github.com/brianngoyoni-254](https://github.com/brianngoyoni-254)
 
 
-##  License
-
-This project is open-source and available for learning purposes.
-
-
-## Acknowledgements
-
-- Moringa School  
-- Online developer communities  
-- Open-source resources  
-
+---
 
 ## Author
 
 **Brian Edward Ngoyoni**
+Software Engineering Student | Aspiring Full-Stack Developer
 
-
-> Thank you for visiting my portfolio! 
+---

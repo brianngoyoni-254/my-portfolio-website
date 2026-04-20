@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brian Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brian Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- INTRO SCREEN -->
+<div id="intro-screen">
+<h1>Welcome to my portfolio</h1>
+</div>
+
 <!-- HEADER -->
 <header class="header">
-    <h1 class="logo">BN</h1>
+<h1 class="logo">BN</h1>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html" target="_blank">Home</a></li>
-            <li><a href="about.html" target="_blank">About</a></li>
-            <li><a href="projects.html" target="_blank">Projects</a></li>
-            <li><a href="contact.html" target="_blank">Contacts</a></li>
-        </ul>
-    </nav>
+<nav class="navbar">
+<ul>
+<li><a href="index.html" target="_blank">Home</a></li>
+<li><a href="about.html" target="_blank">About</a></li>
+<li><a href="projects.html" target="_blank">Projects</a></li>
+<li><a href="contact.html" target="_blank">Contacts</a></li>
+</ul>
+</nav>
 </header>
 
 <!-- HERO SECTION -->
 <section class="hero">
 
-    <!-- LEFT -->
-    <div class="intro">
-        <h4>Hello, It's Me</h4>
-        <h2>Brian Edward Ngoyoni</h2>
+<!-- RIGHT IMAGE FIRST -->
+<div class="image">
+<img id="profile-img" src="images/brian.jpeg" alt="Brian Edward Ngoyoni">
+</div>
 
-        <h3 class="typing first">I'm a junior software developer</h3>
-        <h3 class="typing second">I'm also a WordPress website developer</h3>
+<!-- LEFT -->
+<div class="intro">
+<h4>Hello, It's Me</h4>
+<h2>Brian Edward Ngoyoni</h2>
 
-        <p>
-            Welcome to my portfolio website! I'm passionate about creating responsive 
-            and user-friendly websites and applications. My goal is to build websites,systems and applications that are visually appealing 
-            and functional for all users. Developing is fun ; learning, designing, coding, 
-            troubleshooting, and solving problems.
-        </p>
+<h3 id="typewriter"></h3>
 
-        <!-- BUTTON + SOCIALS -->
-        <div class="actions">
-            <button class="btn">Download CV</button>
+<p id="about-text">
+Welcome to my portfolio website! I'm passionate about creating responsive 
+and user-friendly websites and applications. My goal is to build websites, systems and applications that are visually appealing 
+and functional for all users. Developing is fun; learning, designing, coding, troubleshooting, and solving problems.
+</p>
 
-            <div class="socials">
-                <a href="https://github.com/brianngoyoni-254" target="_blank">
-                    <img src="images/GitHub-logo.png" alt="Github">
-                </a>
-                <a href="https://www.linkedin.com/in/ray-brian-571b2319b" target="_blank">
-                    <img src="images/round-linkedin-logo-isolated-white-background_469489-985.avif" alt="LinkedIn">
-                </a>
-            </div>
-        </div>
-    </div>
+<div class="actions">
+<button class="btn">Download CV</button>
 
-    <!-- RIGHT -->
-    <div class="image">
-        <img src="images/brian.jpeg" alt="Brian Edward Ngoyoni">
-    </div>
+<div class="socials">
+<a href="https://github.com/brianngoyoni-254" target="_blank">
+<img src="images/GitHub-logo.png" alt="Github">
+</a>
+<a href="https://www.linkedin.com/in/ray-brian-571b2319b" target="_blank">
+<img src="images/round-linkedin-logo-isolated-white-background_469489-985.avif" alt="LinkedIn">
+</a>
+</div>
+</div>
+</div>
 
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-    <p>© 2026 Brian Edward Ngoyoni Portfolio. All rights reserved.</p>
+<p>© 2026 Brian Edward Ngoyoni Portfolio. All rights reserved.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
