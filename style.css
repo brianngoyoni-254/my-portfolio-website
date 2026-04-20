@@ -10,7 +10,6 @@ body {
 font-family: Arial, Helvetica, sans-serif;
 background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
 color: white;
-
 display: flex;
 flex-direction: column;
 min-height: 100vh;
@@ -28,18 +27,17 @@ display: flex;
 justify-content: center;
 align-items: center;
 z-index: 9999;
+transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+#intro-text {
 font-size: 2.5rem;
 font-weight: bold;
 letter-spacing: 2px;
-animation: fadeOut 2s ease forwards;
-animation-delay: 2s;
-}
-
-@keyframes fadeOut {
-to {
-opacity: 0;
-visibility: hidden;
-}
+white-space: nowrap;
+border-right: 3px solid white;
+overflow: hidden;
+padding-right: 5px;
 }
 
 /* HEADER */
@@ -76,16 +74,15 @@ color: #00d4ff;
 
 /* HERO SECTION */
 .hero {
-flex: 1; 
+flex: 1;
 display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 60px 10%;
 gap: 40px;
-flex-direction: row;
 }
 
-/* LEFT SIDE */
+/* LEFT TEXT */
 .intro {
 flex: 1;
 }
@@ -100,7 +97,7 @@ margin-bottom: 20px;
 font-size: 32px;
 }
 
-/* TYPEWRITER */
+/* TYPEWRITER MAIN TEXT */
 #typewriter {
 font-size: 22px;
 margin: 15px 0;
@@ -116,15 +113,11 @@ animation: blink 0.7s infinite;
 50% { border-color: transparent; }
 }
 
-/* PARAGRAPH */
+/* ABOUT TEXT */
 .intro p {
 margin-top: 20px;
 line-height: 1.6;
 color: #ddd;
-}
-
-/* HIDDEN INITIALLY */
-#about-text {
 opacity: 0;
 transform: translateY(20px);
 transition: 0.6s ease;
@@ -181,7 +174,7 @@ transition: 0.3s;
 transform: scale(1.1);
 }
 
-/* IMAGE SECTION */
+/*IMAGE */
 .image {
 flex: 1;
 display: flex;
@@ -189,7 +182,6 @@ justify-content: center;
 align-items: center;
 }
 
-/* PROFESSIONAL CIRCLE IMAGE */
 .image img {
 width: 260px;
 height: 260px;
@@ -202,32 +194,31 @@ transform: scale(0.8);
 transition: 0.6s ease;
 }
 
-/* SHOW IMAGE AFTER INTRO */
 .image.show img {
 opacity: 1;
 transform: scale(1);
 }
 
-/* HOVER EFFECT */
 .image img:hover {
 transform: scale(1.05);
 }
 
-/* FOOTER */
+/*FOOTER */
 .footer {
 text-align: center;
 padding: 20px;
 background: rgba(0,0,0,0.5);
 font-size: 14px;
 color: #ccc;
+margin-top: auto;
 }
 
-/* SMOOTH SCROLL */
+/*SMOOTH SCROLL  */
 html {
 scroll-behavior: smooth;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE DESIGN */
 @media (max-width: 900px) {
 .hero {
 flex-direction: column;
@@ -249,18 +240,13 @@ margin-bottom: 20px;
 @media (max-width: 600px) {
 
 .header {
-flex-direction: column; 
-align-items: center;
-gap: 15px; 
+flex-direction: column;
+gap: 15px;
 padding: 15px;
 }
 
-.logo {
-margin-bottom: 10px; 
-}
-
 .navbar ul {
-flex-direction: column; 
-gap: 10px; 
+flex-direction: column;
+gap: 10px;
 }
 }
